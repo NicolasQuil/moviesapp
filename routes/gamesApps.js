@@ -13,7 +13,7 @@ router.get("/", async (req, res) => {
   let reverse = req.query.reverse == "yes" ? 1 : -1;
   let cat = req.query.cat;
   let userId = req.query.userId;
-
+  let search = req.query.search;
   try {
     let findQuery = {};
     if (cat) {
